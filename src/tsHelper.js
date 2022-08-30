@@ -1,7 +1,7 @@
 // @ts-check
-const path = require("path");
-const ts = require("typescript");
-const fs = require("fs");
+const path = require('path');
+const ts = require('typescript');
+const fs = require('fs');
 
 module.exports.getImportsForFile = function getImportsForFile(file, srcRoot) {
     const fileInfo = ts.preProcessFile(fs.readFileSync(file).toString());
